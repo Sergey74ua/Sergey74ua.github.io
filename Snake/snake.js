@@ -6,7 +6,7 @@
 
 var	snake=document.getElementById("snake"), ctx=snake.getContext("2d"), xS=snake.width, yS=snake.height,
 	qS=25, xZ=xS/2-qS, yZ=yS/2-qS, vK, xK=0, yK=0, xZarr=[], yZarr=[], arr, xF, yF, rS=0, rSmax=rS,
-	imgS=new Image(), imgF=new Image(), pattern, audFruit=new Audio(), audFeil=new Audio();
+	imgS=new Image(), imgF=new Image(), audFruit=new Audio(), audFeil=new Audio();
 
 imgS.src="imgSnake_01.png";
 imgF.src="imgSnake_02.png";
@@ -49,8 +49,7 @@ function feil() {
 
 setInterval(function() {
 	
-	pattern=ctx.createPattern(imgS, "repeat");
-	ctx.fillStyle=pattern;
+	ctx.fillStyle=ctx.createPattern(imgS, "repeat");
 	ctx.fillRect(0, 0, xS, yS);
 	
 	ctx.drawImage(imgF, xF-qS*0.3, yF-qS*0.35);
