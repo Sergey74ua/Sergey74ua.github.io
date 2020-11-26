@@ -1,0 +1,36 @@
+/* Таблица цветов - https://colorscheme.ru/html-colors.html */
+
+body {
+	font-family: sans-serif;
+    font-size: 100%;
+    margin: 0;
+	background-color: Black;
+    color: Honeydew;
+}
+
+div, article {
+	margin: 10px;
+}
+
+a {
+	color: SkyBlue;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+h1 {
+    margin: 0.67em 0;
+	color: LightCyan;
+}
+
+img {
+    border: 0;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 2px;
+}
