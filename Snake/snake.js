@@ -46,6 +46,7 @@ function feil() {
 	if (rS>rSmax) rSmax=rS;
 	rS=0;
 };
+
 //Синхронизация canvas с кадрами экрана
 window.requestAnimationFrame=( function() {
 	return	window.requestAnimationFrame		||
