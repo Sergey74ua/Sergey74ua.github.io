@@ -62,21 +62,28 @@ img {
 
 .pr-year {
     position: absolute;
-    top: 1em;
-    right: 1em;
+    top: 0.5em;
+    right: .5em;
     color: tomato;
+    transform: rotate(15deg);
+    font-size: 1.2em;
+    padding: .25em .5em;
+    border: 2px solid tomato;
+    border-radius: 1em;
 }
 
 .pr-lang {
     position: absolute;
     top: 4em;
-    right: 1em;
+    right: .5em;
+    transform: rotate(15deg);
 }
 
 .pr-tool {
     position: absolute;
-    top: 7em;
-    right: 1em;
+    top: 8em;
+    right: .5em;
+    transform: rotate(15deg);
 }
 
 .pr-bgimg {
