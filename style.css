@@ -1,13 +1,11 @@
 body {
-	background-color:indigo;
+	background-color: rgb(0, 16, 8);
     color: honeydew;
+    margin: 10px 10%;
 }
 
 section {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    width: 100%;
+    display: grid;
 }
 
 a {
@@ -15,14 +13,11 @@ a {
 }
 
 h1 {
-    margin: 0.67em 0;
 	color: LightCyan;
 }
 
-img {
-    border: 0;
-    width: 80%;
-    height: auto;
+h2 {
+    color: Yellowgreen;
 }
 
 hr {
@@ -30,21 +25,85 @@ hr {
     height: 2px;
 }
 
+.logo {
+    width: 128px;
+    height: 128px;
+}
+
 .game {
-    width: 256px;
-    height: 256px;
     border: 1px solid fuchsia;
 }
 
 .program {
-    width: 25%;
-    margin: 10px;
+    height: 0;
+    padding-top: 100%;
+    position: relative;
 }
 
-#game {
+.pr-name {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    font-size: 1.5em;
+}
+
+.pr-text {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    color: darkkhaki;
+}
+
+.pr-year {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    color: tomato;
+}
+
+.pr-lang {
+    position: absolute;
+    top: 4em;
+    right: 1em;
+    width: 32px;
+}
+
+.pr-tool {
+    position: absolute;
+    top: 7em;
+    right: 1em;
+    width: 32px;
+}
+
+.pr-bgimg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px);
+}
+
+.pr-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color:rgba(0,16,0,0.75);
+}
+
+#games {
+    grid-template-columns: repeat(8, 1fr);
+    gap: 5px;
     border: 1px solid blue;
 }
 
 #programs {
-    border: 1px solid red;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
 }
