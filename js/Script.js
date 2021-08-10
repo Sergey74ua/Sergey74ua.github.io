@@ -1,6 +1,6 @@
 var bat='ico/Batch.png', cpp='', js='', java='', sharp='', py='', pas='ico/Pascal.jpg', sql='', php='';
 
-var note='', np='ico/Notepad.png', vs='', as='', ps='', abc='', vsc='', os='';
+var note='', np='ico/Notepad.png', vs='ico/VS.png', as='', ps='', abc='', vsc='', os='';
 
 var list_prog = [
    ['Прога 1', 2018, bat, np, 'img/bat01.png', 'Описание 111 ...'],
@@ -38,12 +38,12 @@ for(let i of list_prog){
    block.appendChild(year);
 
    let lang = document.createElement('img');
-   lang.className = 'pr-lang';
+   lang.className = 'pr-lang logo';
    lang.src = i[2];
    block.appendChild(lang);
 
    let tool = document.createElement('img');
-   tool.className = 'pr-tool';
+   tool.className = 'pr-tool logo';
    tool.src = i[3];
    block.appendChild(tool);
 
