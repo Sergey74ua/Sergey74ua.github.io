@@ -1,24 +1,17 @@
-/* Таблица цветов - https://colorscheme.ru/html-colors.html */
-
 body {
-	font-family: sans-serif;
-    font-size: 100%;
-    margin: 0;
-	background-color: Black;
-    color: Honeydew;
+	background-color:indigo;
+    color: honeydew;
 }
 
-div, article {
-	margin: 10px;
+section {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
 }
 
 a {
-	color: SkyBlue;
-}
-
-a:active,
-a:hover {
-    outline: 0;
+	color: skyblue;
 }
 
 h1 {
@@ -28,9 +21,30 @@ h1 {
 
 img {
     border: 0;
+    width: 80%;
+    height: auto;
 }
 
 hr {
     box-sizing: content-box;
     height: 2px;
+}
+
+.game {
+    width: 256px;
+    height: 256px;
+    border: 1px solid fuchsia;
+}
+
+.program {
+    width: 25%;
+    margin: 10px;
+}
+
+#game {
+    border: 1px solid blue;
+}
+
+#programs {
+    border: 1px solid red;
 }

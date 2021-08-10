@@ -1,15 +1,16 @@
-alert("Test JS!");
+var list_prog = [
+   ['Один', 1, 1],
+   ['Два', 2, 22],
+   ['Три', 3, 333],
+   ['Четыре', 4, 4444],
+   ['Пять', 5, 55555],
+];
 
-var	block = document.getElementById('block');
+var section = document.getElementById('programs');
 
-block.textContent = "Тест JS";
-
-var toAdd = document.createDocumentFragment();
-for(var i=0; i <= 5; i++){
-   var newDiv = document.createElement('div');
-   newDiv.id = 'myDiv'
-   newDiv.className = 'myClass'
-   newDiv.textContent = 'Тест '+i;
-   toAdd.appendChild(newDiv);
+for(let i of list_prog){
+   let block = document.createElement('article');
+   block.className = 'program';
+   block.textContent = i[0];
+   section.appendChild(block);
 }
-array.appendChild(toAdd);
