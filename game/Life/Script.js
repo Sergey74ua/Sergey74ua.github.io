@@ -6,7 +6,7 @@
 
 var canvas = document.getElementById('canvas'), ctx = canvas.getContext("2d"),
    btnPlay = document.getElementById('play'), btnClear = document.getElementById('clear'), btnRand = document.getElementById('rand'),
-   game = false, focus = false, speed = 120, size = 12, rnd = 0.61803, center = size/2, arch = 2*Math.PI, radius = center*0.95,
+   game = false, focus = false, speed = 120, size = 16, rnd = 0.61803, center = size/2, arch = 2*Math.PI, radius = center*0.95,
    colBG = 'PapayaWhip', colLine = 'LightBlue', colCell = 'Black',
    //colBG = 'Black', colLine = 'YellowGreen', colCell = 'Lime',
    width, height, row, col;
@@ -63,7 +63,7 @@ setInterval(() => {
    drawCell();
 }, speed)
 
-//Очистка массива клеток
+//Заполнение / очистка массива клеток
 arr = arrNew();
 function arrNew() {
    let arr = [];
@@ -80,7 +80,7 @@ function arrRand() {
    arr = arrNew();
    for (let i = 0; i < row; i++) {
       arr[i] = [];
-      for (let j =0; j < col; j++)
+      for (let j = 0; j < col; j++)
          arr[i][j] = Math.random() >= rnd;
    }
    return arr;
@@ -125,7 +125,7 @@ function drawCell() {
       for (let j = 0; j < col; j++)
          if (arr[i][j]) {
             ctx.beginPath();
-            ctx.arc(j*size+center, i*size+center, radius, 0, arch, true);
+            ctx.arc(j*size+center, i*size+center, radius, 0, arch);
             ctx.fill();
             ctx.closePath();
          }
