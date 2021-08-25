@@ -57,3 +57,16 @@ for(let i of list_prog){
    name.textContent = i[0];
    block.appendChild(name);
 }
+
+var up = document.getElementById('up');
+up.onclick = () => {
+   document.body.scrollTop = 0;
+   document.documentElement.scrollTop = 0;
+}
+
+window.onscroll = () => {
+   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500)
+      up.style.display = 'block';
+   else
+      up.style.display = 'none';
+}
