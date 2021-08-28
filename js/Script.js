@@ -12,7 +12,7 @@ var list_prog = [
    ['Прога 7', 2024, bat, np, 'img/bat07.png', 'Описание 777 ...'],
    ['Прога 8', 2025, bat, np, 'img/bat08.png', 'Описание 888 ...'],
    ['Прога 9', 2026, bat, np, 'img/bat09.png', 'Описание 999 ...'],
-   ['Прога 10', 2027, bat, np, 'img/cpp10.png', 'Описание 1000 ...'],
+   ['Прога 10', 2027, bat, np, 'img/cpp10.png', 'Описание 1000 ...']
 ];
 
 var section = document.getElementById('programs');
@@ -65,7 +65,8 @@ up.onclick = () => {
 }
 
 window.onscroll = () => {
-   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500)
+   if (document.body.scrollTop > 500 ||
+      document.documentElement.scrollTop > 500)
       up.style.display = 'block';
    else
       up.style.display = 'none';
