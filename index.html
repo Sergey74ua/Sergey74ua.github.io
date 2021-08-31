@@ -1,55 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sergey74ua</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="style.css" type="text/css"/>
+    <title>Конкурс 2021</title>
+    <link rel="shortcut icon" href="star.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
 <body>
-<header>
-	<div>
-		<h1>Страничка Sergey74ua.</h1>
-	</div>
-</header>
-<main>
-	<hr>
-	<h2>Браузерные игры</h2>
-	<section id='games'>
-		<article class='game'>
-			<a href="game/Snake/Snake.html" onclick="window.open(this.href, '', 'scrollbars=1, height='+Math.min(710, screen.availHeight)+', width='+Math.min(835, screen.availWidth)); return false;">
-			<img src="game/Snake/snake.png"/>
-			<p>Игра змейка.</p></a>
-		</article>
-		<article class='game'>
-			<a href="game/Life/Life.html"">
-			<img src="game/Life/Life.jpg"/>
-			<p>Игра жизнь.</p></a>
-		</article>
-		<article class='game'>
-			<a href="game\Anthill\Anthill.html"">
-			<img src="game\Anthill\anthill.png"/>
-			<p>Муравейник.</p></a>
-		</article>
-	</section>
-	<hr>
-	<h2>Мои программы</h2>
-	<section id='programs'>
-		<!-- Блоки программ из Script.js -->
-	</section>
-	<hr>
-	<section>
-		<!-- Еще какой-то блок ... -->
-	</section>
-</main>
-<footer>
-	<div>
-		<p>Пока что все ...</p>
-	</div>
-	<button id="up">вверх</button>
-</footer>
-<script src="js/Script.js"></script>
+    <header>
+        <h1>Конкурс</h1>
+        <nav class="tab">
+            <button class="tablinks" onclick="opentab(event, 'Maxim')" id="default">Максим</button>
+            <button class="tablinks" onclick="opentab(event, 'Nikita')">Никита</button>
+            <button class="tablinks" onclick="opentab(event, 'Matvey')">Матвей</button>
+        </nav>
+    </header>
+    <main>
+        <iframe src="https://maxim-2005.github.io/" class="tabcontent" id="Maxim">?</iframe>
+        <iframe src="https://Nikita-2007.github.io" class="tabcontent" id="Nikita">?</iframe>
+        <iframe src="https://matvey2009.github.io/" class="tabcontent" id="Matvey">?</iframe>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>

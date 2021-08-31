@@ -1,125 +1,59 @@
-body {
-	background-color: rgb(0, 16, 8);
-    color: honeydew;
-    margin: 0 10%;
-}
-
-section {
-    display: grid;
-}
-
-a {
-	color: skyblue;
-}
-
-h1 {
-	color: LightCyan;
-}
-
-h2 {
-    color: Yellowgreen;
-}
-
-hr {
-    box-sizing: content-box;
-    height: 2px;
-}
-
-img {
+html, body {
+    padding: 0;
+    margin: 0;
     width: 100%;
     height: 100%;
+    overflow: hidden;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.logo {
-    width: 48px;
-    height: 48px;
+header {
+    height: 80px;
+    background-color: rgb(16, 0, 32);
+    color: cornsilk;
+    border-top: rgb(64, 32, 128) 1px solid;
 }
 
-.game {
-    width: 256px;
-    height: 256px;
-    padding: 3em;
-}
-
-.program {
-    height: 0;
-    padding-top: 100%;
+main {
     position: relative;
 }
 
-.pr-name {
+iframe {
     position: absolute;
-    top: 1em;
-    left: 1em;
-    font-size: 1.5em;
+    height: calc(100vh - 84px);
+    width: calc(100vw - 4px);
 }
 
-.pr-text {
-    position: absolute;
-    bottom: 1em;
-    left: 1em;
-    color: darkkhaki;
+h1 {
+    font-size: 22px;
+    padding: 0 0 0 1.5em;
 }
 
-.pr-year {
-    position: absolute;
-    top: 0.5em;
-    right: .5em;
-    color: tomato;
-    transform: rotate(15deg);
-    font-size: 1.2em;
-    padding: .25em .5em;
-    border: 2px solid tomato;
-    border-radius: 1em;
+.tab {
+    overflow: hidden;
+    border-top: 1px solid #ccc;
 }
 
-.pr-lang {
-    position: absolute;
-    top: 4em;
-    right: .5em;
-    transform: rotate(15deg);
+.tab button {
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+    border: goldenrod 1px solid;
+    outline: none;
+    cursor: pointer;
+    padding: 4px 4em;
+    transition: 0.3s;
 }
 
-.pr-tool {
-    position: absolute;
-    top: 8em;
-    right: .5em;
-    transform: rotate(15deg);
+.tab button:hover {
+    background-color: #ddd;
 }
 
-.pr-bgimg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-    filter: blur(2px);
+.tab button.active {
+    background-color: #ccc;
 }
 
-.pr-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    object-fit: contain;
-    background-color:rgba(0, 16, 8, 0.75);
-}
-
-#games {
-    grid-template-columns: repeat(8, 1fr);
-    gap: 5px;
-    border: 1px solid blue;
-}
-
-#programs {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2em;
-}
-
-#up{
-    position: fixed;
-    z-index: 1;
-    bottom: 1em;
-    right: 1.5em;
+.tabcontent {
     display: none;
 }

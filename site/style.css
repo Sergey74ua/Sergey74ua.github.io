@@ -1,0 +1,125 @@
+body {
+	background-color: rgb(0, 16, 8);
+    color: honeydew;
+    margin: 0 10%;
+}
+
+section {
+    display: grid;
+}
+
+a {
+	color: skyblue;
+}
+
+h1 {
+	color: LightCyan;
+}
+
+h2 {
+    color: Yellowgreen;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 2px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+}
+
+.game {
+    width: 256px;
+    height: 256px;
+    padding: 3em;
+}
+
+.program {
+    height: 0;
+    padding-top: 100%;
+    position: relative;
+}
+
+.pr-name {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    font-size: 1.5em;
+}
+
+.pr-text {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    color: darkkhaki;
+}
+
+.pr-year {
+    position: absolute;
+    top: 0.5em;
+    right: .5em;
+    color: tomato;
+    transform: rotate(15deg);
+    font-size: 1.2em;
+    padding: .25em .5em;
+    border: 2px solid tomato;
+    border-radius: 1em;
+}
+
+.pr-lang {
+    position: absolute;
+    top: 4em;
+    right: .5em;
+    transform: rotate(15deg);
+}
+
+.pr-tool {
+    position: absolute;
+    top: 8em;
+    right: .5em;
+    transform: rotate(15deg);
+}
+
+.pr-bgimg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    filter: blur(2px);
+}
+
+.pr-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+    background-color:rgba(0, 16, 8, 0.75);
+}
+
+#games {
+    grid-template-columns: repeat(8, 1fr);
+    gap: 5px;
+    border: 1px solid blue;
+}
+
+#programs {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+}
+
+#up{
+    position: fixed;
+    z-index: 1;
+    bottom: 1em;
+    right: 1.5em;
+    display: none;
+}
