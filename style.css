@@ -11,7 +11,8 @@ header {
     height: 80px;
     background-color: rgb(16, 0, 32);
     color: cornsilk;
-    border-top: rgb(64, 32, 128) 1px solid;
+    border-top: rgb(64, 32, 128) 2px solid;
+    border-bottom: black 3px solid;
 }
 
 main {
@@ -20,38 +21,46 @@ main {
 
 iframe {
     position: absolute;
-    height: calc(100vh - 84px);
+    height: calc(100vh - 85px);
     width: calc(100vw - 4px);
+    border: 0;
 }
 
 h1 {
     font-size: 22px;
-    padding: 0 0 0 1.5em;
+    margin: 25px;
 }
 
-.tab {
+.tab, div {
     overflow: hidden;
-    border-top: 1px solid #ccc;
+    float: left;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 
-.tab button {
-    background-color: white;
-    font-size: 16px;
-    font-weight: bold;
-    float: left;
-    border: goldenrod 1px solid;
-    outline: none;
+.tablinks {
     cursor: pointer;
-    padding: 4px 4em;
     transition: 0.3s;
 }
 
-.tab button:hover {
-    background-color: #ddd;
+.tab img {
+    opacity: 0.8;
+    border: darkslateblue 1px solid;
+    transition: all 0.5s ease;
 }
 
-.tab button.active {
-    background-color: #ccc;
+.tab img:hover {
+    opacity: 0.5;
+    border: yellow 1px solid;
+    transition: all 0.5s ease;
+}
+
+.tab img.active {
+    opacity: 1;
+    border: lime 1px solid;
+    transition: all 0.5s ease;
 }
 
 .tabcontent {
