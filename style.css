@@ -11,7 +11,6 @@ header {
     height: 80px;
     background-color: rgb(16, 0, 32);
     color: cornsilk;
-    border-top: rgb(64, 32, 128) 2px solid;
     border-bottom: black 3px solid;
 }
 
@@ -19,10 +18,10 @@ main {
     position: relative;
 }
 
-iframe {
-    position: absolute;
-    height: calc(100vh - 85px);
-    width: calc(100vw - 4px);
+div {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
     border: 0;
 }
 
@@ -31,13 +30,32 @@ h1 {
     margin: 25px;
 }
 
-.tab, div {
-    overflow: hidden;
-    float: left;
-    outline: none;
+iframe {
+    position: absolute;
+    height: calc(100vh - 82px);
+    width: calc(100vw - 4px);
+    border: 0;
+}
+
+p {
+    color: white;
+    margin: 48px 0 0 16px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-905deg);
+    transform: rotate(-90deg);
+}
+
+.name {
     padding: 0;
     margin: 0;
-    border: 0;
+    height: 80px;
+    width: 40px;
+}
+
+.tab div {
+    float: left;
 }
 
 .tablinks {
