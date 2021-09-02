@@ -19,7 +19,6 @@ main {
 }
 
 div {
-    overflow: hidden;
     padding: 0;
     margin: 0;
     border: 0;
@@ -38,8 +37,15 @@ iframe {
 }
 
 .mes {
+    float: left;
     font-size: 16px;
-    padding-left: 24px;
+    padding: 0 24px;
+}
+
+.ok {
+    display: block;
+    color: lightcyan;
+    padding: 24px;
 }
 
 .rotate {
