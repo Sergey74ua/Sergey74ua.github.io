@@ -1,0 +1,252 @@
+main{
+    margin:0 5%;
+}
+
+header{
+    position:relative;
+}
+
+body{
+    background-color: #333333;
+}
+
+nav{
+    z-index: 1;
+    position:fixed;
+    top:5em;
+    padding: 3em;
+
+    font-size: 1em;
+    text-align: left;
+    left:-2em;
+
+    font-family: Verdana;
+    font-style: normal;
+    font-weight: bold;
+
+    background: #333333;
+    border: 0.2em solid #CC66FF;
+    border-radius:0 100% 100% 0;
+}
+
+a{
+    color:#CC66FF;
+}
+
+nav a{
+    color:#CC66FF;
+}
+
+section{
+    display:grid;
+}
+
+img{
+    width:100%;
+    height:100%;
+}
+
+.photo{
+    padding-left: 60%;
+}
+
+#games{
+    grid-template-columns:repeat(8, 1fr);
+    gap: 4em;
+}
+
+.game{
+    width:15em;
+    height:15em;
+}
+
+#programs{
+    grid-template-columns:repeat(4, 1fr);
+    gap: 4em;
+}
+
+h3{
+    font-size: 4.4em;
+    text-align: center;
+    color:#CC66FF;
+    margin: 1em 0 0.5em;
+
+    font-family: Verdana;
+    font-style: normal;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+#Name{
+    position:absolute;
+    top:1em;
+    left:2em;
+    font-size:10em;
+    color:#CC66FF;
+
+    font-family: Verdana;
+    font-style: normal;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+h1{
+    font-size:2em;
+    text-align: center;
+    color:#CC66FF;
+
+    font-family: Verdana;
+    font-style: normal;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.program{
+    position:relative;
+    height:0%;
+    padding-top:100%;
+    background: #333333;
+    border: 0.1em solid #6F6F6F;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5), inset 0px 0px 20px rgba(0, 0, 0, 0.1), inset 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5em;
+}
+
+.pr-bg_img{
+    position:absolute;
+    padding: 22% 2%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    object-fit:cover;
+    filter:blur(2px);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5), inset 0px -50px 20px rgba(0, 0, 0, 0.1), inset 0px 60px 25px rgba(0, 0, 0, 0.1);
+}
+
+.pr-image{
+    position:absolute;
+    padding: 22% 2%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    object-fit:contain;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5), inset 0px -50px 20px rgba(0, 0, 0, 0.1), inset 0px 60px 25px rgba(0, 0, 0, 0.1);
+}
+
+.pr-year{
+    position:absolute;
+    width:3.9em;
+    height: 1.5em;
+    top:-0.1em;
+    left:-0.6em;
+    text-align: center;
+    color: 333333;
+    transform:rotate(-25deg);
+    font-size:1.5em;
+    color:#CC66FF;
+
+    background: #333333;
+    border: 0.1em solid #CC66FF;
+    border-radius:1em;
+
+    font-family: Verdana;
+    font-style: normal;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5), inset 0px -50px 20px rgba(0, 0, 0, 0.1), inset 0px 60px 25px rgba(0, 0, 0, 0.1);
+}
+
+.pr-lang{
+    position:absolute;
+    top:7em;
+    right:-2.5em;
+    transform:rotate(35deg);
+}
+
+.pr-tool{
+    position:absolute;
+    top:14em;
+    right:-2.5em;
+    transform:rotate(35deg);
+}
+
+.pr-text{
+    position:absolute;
+    bottom:1em;
+    left:0.5em;
+    font-size: 1.2em;
+    color:#CC66FF;
+
+
+    font-family: Verdana;
+    font-style: normal;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.pr-name{
+    position:absolute;
+    width: 100%;
+    top: 1em;
+    font-size:1.5em;
+    text-align: center;
+    color:#CC66FF;
+
+    font-family: Verdana;
+    font-style: normal;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo{
+    width:5em;
+    height:5em;
+}
+
+#tools{
+    grid-template-columns:repeat(7, 14.5em);
+    gap:2em;
+}
+
+.tool{
+    width: 6em;
+    height:6em;
+}
+
+#languages{
+    grid-template-columns:repeat(7, 14.5em);
+    gap:2em;
+}
+
+.language{
+    width:6em;
+    height:6em;
+}
+
+.avatar{
+    width:30em;
+    height:30em;
+}
+
+#up{
+    position: fixed;
+    z-index: 1;
+    right: 1em;
+    bottom: 1em;
+    display:none;
+}
+
+#underground{
+    margin-top: 5em;
+    background:#333333;
+    font-size: 1em;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color:#CC66FF;
+    border: 0.1em solid #CC66FF;
+
+    font-family: Verdana;
+    font-style: normal;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}

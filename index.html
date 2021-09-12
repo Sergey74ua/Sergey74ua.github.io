@@ -1,40 +1,60 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Конкурс 2021</title>
-    <link rel="shortcut icon" href="star.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css" type="text/css"/>
+	<title>Sergey74ua</title>
+	<link rel="shortcut icon" href="ico/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css" type="text/css"/>
 </head>
 <body>
-    <header>
-        <nav class="tab">
-            <div><h1>Конкурс на лучший сайт</h1></div>
-            <div class="proger"><p class="rotate">Максим</p></div>
-            <div><img src="Maksim.jpg" class="tablinks" onclick="opentab(event, 'Maxim')" id="default"></div>
-            <div class="proger"><p class="rotate">Никита</p></div>
-            <div><img src="Nikita.jpg" class="tablinks" onclick="opentab(event, 'Nikita')"></div>
-            <div class="proger"><p class="rotate">Матвей</p></div>
-            <div><img src="Matvey.jpg" class="tablinks" onclick="opentab(event, 'Matvey')"></div>
-        </nav>
-        <div class="mes">
-            <ul>
-                <li>1 место: - ?</li>
-                <li>2 место: - ?</li>
-                <li>3 место: - ?</li>
-            </ul>
-        </div>
-        <div class="ok">
-            Результат присылайте на Одноклассники<a href="site\index.html">.</a>
-        </div>
-    </header>
-    <main>
-        <iframe src="https://maxim-2005.github.io/" class="tabcontent" id="Maxim">?</iframe>
-        <iframe src="https://Nikita-2007.github.io" class="tabcontent" id="Nikita">?</iframe>
-        <iframe src="https://matvey2009.github.io/" class="tabcontent" id="Matvey">?</iframe>
-    </main>
-    <script src="script.js"></script>
+<header>
+	<div>
+		<h1>Страничка Sergey74ua.</h1>
+	</div>
+</header>
+<main>
+	<hr>
+	<h2>Браузерные игры</h2>
+	<section id='games'>
+		<article class='game'>
+			<a href="game/Snake/Snake.html" onclick="window.open(this.href, '', 'scrollbars=1, height='+Math.min(710, screen.availHeight)+', width='+Math.min(835, screen.availWidth)); return false;">
+			<img src="game/Snake/snake.png"/>
+			<p>Игра змейка</p></a>
+		</article>
+		<article class='game'>
+			<a href="game/Life/Life.html"">
+			<img src="game/Life/Life.jpg"/>
+			<p>Игра жизнь</p></a>
+		</article>
+		<article class='game'>
+			<a href="game\Anthill\Anthill.html"">
+			<img src="game\Anthill\anthill.png"/>
+			<p>Муравейник</p></a>
+		</article>
+		<article class='game'>
+			<a href="game\Stars\stars.html"">
+			<img src="game\Stars\stars.jpg"/>
+			<p>Звезды (заставка)</p></a>
+		</article>
+	</section>
+	<hr>
+	<h2>Мои программы</h2>
+	<section id='programs'>
+		<!-- Блоки программ из Script.js -->
+	</section>
+	<hr>
+	<section>
+		<!-- Еще какой-то блок ... -->
+	</section>
+</main>
+<footer>
+	<div>
+		<a href="contest\index.html"><p>Конкурс 2021</p></a>
+	</div>
+	<button id="up">вверх</button>
+</footer>
+<script src="js/Script.js"></script>
 </body>
 </html>
