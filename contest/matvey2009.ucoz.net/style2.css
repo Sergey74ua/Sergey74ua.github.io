@@ -1,0 +1,58 @@
+* {
+	box-sizing: bodrder-box;
+	margin: 5px auto;
+}
+body {
+	background: radial-gradient(Magenta, Coral, Lime, Aqua, Yellow);
+	max-width: 1000px;
+}
+header { /*верхний блок*/
+	text-align: center;
+	background: radial-gradient(Magenta, Coral, Lime, Aqua, Yellow);
+	height: 100px;
+	border: 1px solid radial-gradient(Magenta, Coral, Lime, Aqua, Yellow);
+	border-radius: 10px;
+	padding: 8px;
+}
+main {
+	display: flex;
+	overflow: auto;
+	min-height: 400px;
+}
+menu { /*Левый блок*/
+	flex: 1;
+	background: radial-gradient(Magenta, Coral, Lime, Aqua, Yellow);
+	border: 1px radial-gradient(Magenta, Coral, Lime, Aqua, Yellow);
+	border-radius: 10px;
+	padding: 8px;
+}
+content { /*основа*/
+	flex: 3;
+	background: radial-gradient(Magenta, Coral, Lime, Aqua, Yellow);
+	border: 2px radial-gradient(Magenta, Coral, Lime, Aqua, Yellow);
+	border-radius: 10px;
+	margin-left: 10px;
+	margin-right:	10px;
+}
+aside { /*правый блок*/
+	flex: 1;
+	background: radial-gradient(Magenta, Coral, Lime, Aqua, Yellow);
+	border:	2px solid radial-gradient(Magenta, Coral, Lime, Aqua, Yellow);
+	border-radius: 10px;
+	padding: 8px;
+}
+footer { /*низ блок*/
+	background: radial-gradient(Magenta, Coral, Lime, Aqua, Yellow);
+	height: 80px;
+	border:	2px solid radial-gradient(Magenta, Coral, Lime, Aqua, Yellow);
+	border-radius: 10px;
+	padding: 8px;
+}
+.screen {
+	max-width: 355px;
+}
+.code {
+	max-width: 250px;
+	max-height: 280px;
+	overflow: auto;
+}

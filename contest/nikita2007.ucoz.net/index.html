@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<!--история изучения програмарование 21.08.2018.20.12.55-->
+<html lang="ru">
+<head>
+	<meta charset="utf-8"/>
+	<title>Lobby</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+<!--Оглавление-->
+<header>
+<a name="start"></a>
+	<h1>История Прогромирования</h1>
+	<h2>Автор: Никита Сергеевич (11 лет)</h2>
+</header>
+<main>
+	<!--Лево-->
+	<menu>
+	<ul>
+	<li><a href="#P1">Hello World</a></li>
+	<li><a href="#P2">Программа "password"</a></li>
+	<li><a href="#P3">Камнь ножницы Бумага</a></li>
+	<li><a href="#P4">Ввод</a></li>
+	<li><a href="#P5">Треугольник</a></li>
+	<li><a href="#P6">Тексты</a></li>
+	<li><a href="#P7">Больше меньше</a></li>
+	<li><a href="#P8">Таблица Умнажение (С++)</a></li>
+	<li><a href="#P9">animation</a></li>
+	<li><a href="#P10">Больше Меньше (C++)</a></li>
+	<li><a href="#P11">Hello World (C++)</a></li>
+	</ul>
+	</menu>
+	<!--Центер-->
+	<content>
+
+<section>
+	<table width="99%">
+	<tr>
+	<a name="P1"></a>
+	<td colspan=2><h3>Hello World!</h3></td>	
+	</tr>
+	<tr>
+	<td width="460"><img class="screen" src="img\Prog01.jpg"></td>
+	<td valign="top">
+	<div class="code">
+	<pre>
+<code>@echo off
+echo Hello World!
+pause</code>
+	</pre>
+	</div>
+	</td>
+	</tr>
+	<tr>
+	<td><a href="files/Hello_World.bat" download>Скачать</a></td>
+	<td align="right"> <a href="#start">В начало</a></td>
+	</tr>
+	</table>
+<hr size="5">
+</section>
+
+<section>
+	<table width="99%">
+	<tr>
+	<a name="P2"></a>
+	<td colspan=2><h3>Программа "password"</h3></td>	
+	</tr>
+	<tr>
+	<td width="460"><img class="screen" src="img\Prog02.jpg"></td>
+	<td valign="top">
+	<div class="code">
+	<pre>
+<code>
+@echo off
+chcp 1251
+cls
+:1
+set /p pass=Веддите пороль:
+if %pass%==123456789 (goto 2) else (echo Неправильный пороль. Попробуйте ещё раз && goto 1)
+:2
+cls
+echo Пароль Верный.
+pause>nul
+</code>
+	</pre>
+	</div>
+	</td>
+	</tr>
+	<tr>
+	<td><a href="files/passworld.bat" download>Скачать</a></td>
+	<td align="right"> <a href="#start">В начало</a></td>
+	</tr>
+	</table>
+<hr size="5">
+</section>
+
+<section>
+	<table width="99%">
+	<tr>
+	<a name="P3"></a>
+	<td colspan=2><h3>Камнь ножницы Бумага</h3></td>	
+	</tr>
+	<tr>
+	<td width="460"><img class="screen" src="img\Prog03.jpg"></td>
+	<td valign="top">
+	<div class="code">
+	<pre>
+<code>
+@echo off      
+chcp 1251
+cls
+title Камень ножницы бумага 
+:1
+echo:
+echo                 _           _   ___________ 
+echo                 \\         //  !           !
+echo      ЖЖ          \\       //   !           !
+echo     ЖЖЖЖЖ         \\     //    !           !
+echo    ЖЖЖЖЖЖЖ         \\   //     !           !
+echo   ЖЖЖЖЖЖЖЖЖЖ        \\ //      !           !
+echo  ЖЖЖЖЖЖЖЖЖЖЖЖ    OOOOO OOOOO   !           !
+echo  ЖЖЖЖЖЖЖЖЖЖЖЖ    O   O O   O   !           !
+echo   ЖЖЖЖЖЖЖЖЖЖ     OOOOO OOOOO   !___________!
+echo:
+choice /c 123 /n /m "Нажмите 1(Камень),2(Ножницы) или 3(Бумага) : 
+set KNB=%errorlevel%
+cls
+if %KNB%==1 (echo Вы выбрали       : Камень)
+if %KNB%==2 (echo Вы выбрали       : Ножницы)
+if %KNB%==3 (echo Вы выбрали       : Бумага)
+
+set /a RND=1+3*%random%/32767
+
+if %RND%==1 (echo Кампьютер выбрал : Камень)
+if %RND%==2 (echo Кампьютер выбрал : Ножницы)
+if %RND%==3 (echo Кампьютер выбрал : Бумага)
+
+set /a GAME=%GAME%+1
+
+if %KNB%==%RND% (echo Ничья & set /a DRAW=%DRAW%+1)
+if %KNB%==1 (if %RND%==2 (echo Вы победили & set /a WIN=%WIN%+1))
+if %KNB%==2 (if %RND%==3 (echo Вы победили & set /a WIN=%WIN%+1))
+if %KNB%==3 (if %RND%==1 (echo Вы победили & set /a WIN=%WIN%+1))
+
+if %KNB%==1 (if %RND%==3 (echo Вы проиграли & set /a LOSE=%LOSE%+1))
+if %KNB%==2 (if %RND%==1 (echo Вы проиграли & set /a LOSE=%LOSE%+1))
+if %KNB%==3 (if %RND%==2 (echo Вы проиграли & set /a LOSE=%LOSE%+1))
+
+echo                                                          CЧЁТ %WIN% : %LOSE%
+echo Побед:%WIN%
+echo Порожений:%LOSE%
+echo Ничьих: %DRAW%
+echo Всего игр: %GAME%
+
+echo:
+</code>
+	</pre>
+	</div>
+	</td>
+	</tr>
+	<tr>
+	<td><a href="files/knb_8.bat" download>Скачать</a></td>
+	<td align="right"> <a href="#start">В начало</a></td>
+	</tr>
+	</table>
+<hr size="5">
+</section>
+
+<section>
+	<table width="99%">
+	<tr>
+	<a name="P4"></a>
+	<td colspan=2><h3>Ввод</h3></td>	
+	</tr>
+	<tr>
+	<td width="460"><img class="screen" src="img\Prog04.jpg"></td>
+	<td valign="top">
+	<div class="code">
+	<pre>
+<code>
+@echo off      
+chcp 1251
+:1
+cls
+set /p pass=Ведите число:
+echo Вы выбрали:%pass%
+pause>nul
+goto 1
+
+</code>
+	</pre>
+	</div>
+	</td>
+	</tr>
+	<tr>
+	<td><a href="files/vvod.bat" download>Скачать</a></td>
+	<td align="right"> <a href="#start">В начало</a></td>
+	</tr>
+	</table>
+<hr size="5">
+</section>
+
+<section>
+	<table width="99%">
+	<tr>
+	<a name="P5"></a>
+	<td colspan=2><h3>Треугольник</h3></td>	
+	</tr>
+	<tr>
+	<td width="460"><img class="screen" src="img\Prog05.jpg"></td>
+	<td valign="top">
+	<div class="code">
+	<pre>
+<code>
+echo off
+chcp 1251>nul
+:1
+cls
+set /p X=Ведите длину стороны трекгольника: 
+if %X%==0 (goto 1)
+if %X%==1 (goto 2)
+if %X%==2 (goto 3)
+echo:
+for /L %%N in (1,1,%X%) do &ltnul set /p =@
+echo:
+for /L %%N in (4,1,%X%) do (
+	&ltnul set /p =@
+	for /L %%N in (%X%,-1,%%N) do &ltnul set /p =.
+	echo @
+	)
+:3
+echo @@
+:2
+echo @
+pause>nul
+goto 1
+</code>
+	</pre>
+	</div>
+	</td>
+	</tr>
+	<tr>
+	<td><a href="files/treugolnik.bat" download>Скачать</a></td>
+	<td align="right"> <a href="#start">В начало</a></td>
+	</tr>
+	</table>
+<hr size="5">
+</section>
+
+<section>
+	<table width="99%">
+	<tr>
+	<a name="P6"></a>
+	<td colspan=2><h3>Тексты</h3></td>	
+	</tr>
+	<tr>
+	<td width="460"><img class="screen" src="img\Prog06.jpg"></td>
+	<td valign="top">
+	<div class="code">
+	<pre>
+<code>
+echo off
+chcp 1251
+title Текст
+:1
+cls
+set /p S=Видите слово:  
+echo:
+echo Ваше слово:%S%
+echo:
+
+echo Первая буква вашего слова
+echo %S:~0,1%
+pause>nul
+
+echo:
+echo последние 3 буквы:
+echo %S:~-3%
+pause>nul
+
+echo:
+echo Всё слово кроме первыз 2 букв:
+echo %S:~2%
+pause>nul
+
+echo:
+echo Три третих букв
+echo %S:~2,3%
+pause>nul
+
+echo:
+echo Удаление части строки
+echo %S:бар=%
+pause>nul
+
+echo:
+echo Замена части строки
+echo %S:бар=%___%
+pause>nul
+goto 1
+</code>
+	</pre>
+	</div>
+	</td>
+	</tr>
+	<tr>
+	<td><a href="files/teksty.bat" download>Скачать</a></td>
+	<td align="right"> <a href="#start">В начало</a></td>
+	</tr>
+	</table>
+<hr size="5">
+</section>
+
+<section>
+	<table width="99%">
+	<tr>
+	<a name="P7"></a>
+	<td colspan=2><h3>Больше меньше</h3></td>	
+	</tr>
+	<tr>
+	<td width="460"><img class="screen" src="img\Prog07.jpg"></td>
+	<td valign="top">
+	<div class="code">
+	<pre>
+<code>
+@echo off
+chcp 1251
+:start
+set /a RND=%random% %%1000 +1
+set /a %GAME%+=1
+:1
+cls
+set /a GAME=%GAME%+1
+set /p X=Ведите Число: 
+if %X% LSS %RND% (echo Число больше
+	pause>nul
+	goto 1
+	)
+if %X% GTR %RND% (echo Число меньше
+	pause>nul
+	goto 1
+	)
+if %X%==%RND% (
+	echo Вы победили!!!.Вы угодали Число!!!
+	echo С %GAME% Попытки 
+	pause>nul
+	set /a GAME=0
+	goto satrt
+	)
+</code>
+	</pre>
+	</div>
+	</td>
+	</tr>
+	<tr>
+	<td><a href="files/ugadaj_chislo.bat" download>Скачать</a></td>
+	<td align="right"> <a href="#start">В начало</a></td>
+	</tr>
+	</table>
+<hr size="5">
+</section>
+
+<section>
+	<table width="99%">
+	<tr>
+	<a name="P8"></a>
+	<td colspan=2><h3>Таблица Умнажение</h3></td>	
+	</tr>
+	<tr>
+	<td width="460"><img class="screen" src="img\Prog08.jpg"></td>
+	<td valign="top">
+	<div class="code">
+	<pre>
+<code>
+#include &ltiostream>
+using namespace  std;
+void line1(char S)
+{
+	cout << " ";
+	int i = 1;
+	while (i <= 71)
+	{
+		i++;
+		cout  << S;
+	}
+	cout << endl;
+}
+
+void line2(char S)
+{
+	cout << " " << S;
+	int i = 1;
+	do
+	{
+		i++;
+		cout << "      "<< S;
+	} while (i <= 10);
+	cout << endl;
+}
+
+int line3(char S, int k)
+{
+		cout << " " << S;
+		for (int i = 1; i <= 10; i++)
+		{
+			int R = i* k;
+			R &lt 10 ? (cout << "   ") : R &lt 100 ? (cout << "  ") : (cout << " ");
+			cout << R << "  " << S;
+		}
+		cout << endl;
+	return 0;
+}
+
+void main()
+{
+	setlocale(LC_ALL, "RUS");
+	system("mode con cols=74 lines=43");
+	char S = '%';
+	cout << endl;
+	cout <<"                         ТАБЛИЦА УМНОЖЕНИЯ"<< endl;
+	line1(S);
+	for (int k = 1; k <= 10; k++)	
+	{
+	
+	line2(S);
+	line3(S, k);
+	line2(S);
+	line1(S);
+	}
+
+	system("pause>nul");
+}
+</code>
+	</pre>
+	</div>
+	</td>
+	</tr>
+	<tr>
+	<td><a href="files/tablica.exe" download>Скачать</a></td>
+	<td align="right"> <a href="#start">В начало</a></td>
+	</tr>
+	</table>
+<hr size="5">
+</section>
+
+<section>
+	<table width="99%">
+	<tr>
+	<a name="P9"></a>
+	<td colspan=2><h3>animation</h3></td>	
+	</tr>
+	<tr>
+	<td width="460"><img class="screen" src="img\Prog9.jpg"></td>
+	<td valign="top">
+	<div class="code">
+	<pre>
+<code>
+@echo off
+chcp 1251
+setlocal ENABLEDELAYEDEXPANSION
+mode con cols=100 lines=40
+cls
+set X=1
+:start
+FOR /F "usebackq delims=" %%i IN (Sprate.txt) DO (
+	echo.%%i
+	set /a X=X+1
+	if !X! gtr 39 (
+		set X=1
+		&rtnul pathping /h 1 /p 120 /q 1 /w 1 127.0.0.1
+::pause &rtnul
+		cls
+		)
+	)
+goto start
+</code>
+	</pre>
+	</div>
+	</td>
+	</tr>
+	<tr>
+	<td><a href="files/animation.rar" download>Скачать</a></td>
+	<td align="right"> <a href="#start">В начало</a></td>
+	</tr>
+	</table>
+<hr size="5">
+</section>
+
+<section>
+	<table width="99%">
+	<tr>
+	<a name="P10"></a>
+	<td colspan=2><h3>Больше Меньше</h3></td>	
+	</tr>
+	<tr>
+	<td width="460"><img class="screen" src="img\Prog010.png"></td>
+	<td valign="top">
+	<div class="code">
+	<pre>
+<code>
+// Игра Больше меньше
+//автор Никита Покидько
+// 11.08.2018 Крым Саки
+#include &ltiostream>
+#include &ltctime>
+using namespace  std;
+void main()
+{
+	setlocale(LC_ALL, "RUS");
+	//Создание рандомного числа
+	srand(time(NULL));
+	int Z;
+	int H=0;
+	Z = rand() % 1000 + 1;
+	//Знакомство с програмой
+	cout << "Здравствуйте!\n";
+	cout << "Вы играите в игру Больше меньше.\n";
+	cout << "Сдесь надо угодать число от 1 до 1000\n";
+	cout << "Вам будут подсказывать больше число или меньше\n";
+	cout << "Удачи!";
+	system("pause>nul");
+start:
+	system("cls");
+
+	H++;
+	//Запрос числа
+	cout << "Введите число : ";
+	int X;
+	cin >> X;
+	//Сравнение
+	if (X == Z)
+	{
+	system("cls");
+	cout << "Вы победили!\n";
+	cout << "Число попыток: ";
+	cout << H ;
+	cout << " \n";
+	cout << "Сыграть ещё раз? (Enter)";
+	}
+	if (X &rt Z)
+	{
+	system("cls");
+		cout << "Число меньше";
+	}
+	if (X &lt Z)
+	{
+		system("cls");
+		cout << "Число больше\n";
+	}
+	//вначало
+	system("pause>nul");
+goto start;
+}
+</code>
+	</pre>
+	</div>
+	</td>
+	</tr>
+	<tr>
+	<td><a href="files/big_smail.exe" download>Скачать</a></td>
+	<td align="right"> <a href="#start">В начало</a></td>
+	</tr>
+	</table>
+<hr size="5">
+</section>
+
+<section>
+	<table width="99%">
+	<tr>
+	<a name="P11"></a>
+	<td colspan=2><h3>Hello World</h3></td>	
+	</tr>
+	<tr>
+	<td width="460"><img class="screen" src="img\Prog011.png"></td>
+	<td valign="top">
+	<div class="code">
+	<pre>
+<code>
+#include &ltiostream> //Стандартная библтотека
+
+using namespace  std; //Пространство имён для библиотеки
+
+void main() //старт програмы
+{
+	cout<<"Hello World!"<< endl; //вывод на икран кансоль
+	system("pause"); //пауза
+}</code>
+	</pre>
+	</div>
+	</td>
+	</tr>
+	<tr>
+	<td><a href="files/Hello World.exe" download>Скачать</a></td>
+	<td align="right"> <a href="#start">В начало</a></td>
+	</tr>
+	</table>
+<hr size="5">
+</section>
+
+</content>
+	<!--Право-->
+	<aside>
+	Мои друзья и их сайты:
+	<br>
+	<hr 3>
+	<a href="http://maxim2005.ucoz.net" target= blank >Максим </a><br>
+	<br>
+	<a href="http://matvey2009.ucoz.net" target= blank >Матвей </a><br>
+	<br>
+	<a href="http://cpp.ucoz.net" target= blank >Учитель Папа </a><br>
+	<br>
+	<a href="http://nikita2007.ucoz.net/Snake/Snake.html" target= blank >Змейка </a>
+	</aside>
+</main>
+<!--Подпись-->
+<footer>
+$GLOBAL_BFOOTER$
+</footer>
+</body>
+</html>
