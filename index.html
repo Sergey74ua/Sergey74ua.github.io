@@ -4,57 +4,62 @@
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sergey74ua</title>
-	<link rel="shortcut icon" href="ico/favicon.ico" type="image/x-icon">
+	<title>Программирование</title>
+	<link rel="shortcut icon" href="ico/sphere.png" type="image/x-icon">
 	<link rel="stylesheet" href="css/style.css" type="text/css"/>
 </head>
 <body>
 <header>
 	<div>
-		<h1>Страничка Sergey74ua.</h1>
+		<h1>Программа обучения детей программированию</h1>
 	</div>
-</header>
-<main>
+	<div>
+		<a href="contest\index.html"><p>Конкурс 2021</p></a>
+	</div>
 	<hr>
 	<h2>Браузерные игры</h2>
-	<section id='games'>
+	<section id='game'>
 		<article class='game'>
 			<a href="game/Snake/Snake.html" onclick="window.open(this.href, '', 'scrollbars=1, height='+Math.min(710, screen.availHeight)+', width='+Math.min(835, screen.availWidth)); return false;">
 			<img src="game/Snake/snake.png"/>
 			<p>Игра змейка</p></a>
 		</article>
 		<article class='game'>
-			<a href="game/Life/Life.html"">
+			<a href="game/Life/Life.html" target="_blank">
 			<img src="game/Life/Life.jpg"/>
 			<p>Игра жизнь</p></a>
 		</article>
 		<article class='game'>
-			<a href="game\Anthill\Anthill.html"">
+			<a href="game\Anthill\Anthill.html" target="_blank">
 			<img src="game\Anthill\anthill.png"/>
 			<p>Муравейник</p></a>
 		</article>
 		<article class='game'>
-			<a href="game\Stars\stars.html"">
+			<a href="game\Stars\stars.html" target="_blank">
 			<img src="game\Stars\stars.jpg"/>
 			<p>Звезды (заставка)</p></a>
 		</article>
 	</section>
 	<hr>
-	<h2>Мои программы</h2>
-	<section id='programs'>
-		<!-- Блоки программ из Script.js -->
-	</section>
-	<hr>
-	<section>
-		<!-- Еще какой-то блок ... -->
-	</section>
+</header>
+<main id='block'>
+	<h1>Мои программы</h1>
+	<!-- Блоки программ из Script.js -->
 </main>
+<aside>
+	<h2>Bat - везде под рукой</h2>
+	<h2>C/C++ - что под капотом</h2>
+	<h2>JavaScript - два в одном</h2>
+	<h2>Java - кровавый энтерпрайз</h2> <!-- <h2>Java(AS) - мир за окнами</h2> -->
+	<h2>Pascal - язык мертвых</h2>
+	<h2>С# - где ты раньше был</h2> <!-- <h2>С#(Unity) - 3D мир</h2> -->
+	<h2>Python - "наша прелесть" для олимпийцев</h2> <!-- <h2>Python(Qt) - чтоб два раза не ходить</h2> -->
+
+	<h2>Первые сайты - наждачкой по глазам</h2>
+</aside>
 <footer>
-	<div>
-		<a href="contest\index.html"><p>Конкурс 2021</p></a>
-	</div>
 	<button id="up">вверх</button>
 </footer>
-<script src="js/Script.js"></script>
+<script type='text/javascript' src="js/Script.js"></script>
 </body>
 </html>

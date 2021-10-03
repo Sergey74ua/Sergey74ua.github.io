@@ -42,7 +42,7 @@ img {
     padding: 3em;
 }
 
-.program {
+.prog {
     height: 0;
     padding-top: 100%;
     position: relative;
@@ -106,13 +106,13 @@ img {
     background-color:rgba(0, 16, 8, 0.75);
 }
 
-#games {
+#game {
     grid-template-columns: repeat(8, 1fr);
     gap: 5px;
     border: 1px solid blue;
 }
 
-#programs {
+#block .listBlock {
     grid-template-columns: repeat(4, 1fr);
     gap: 2em;
 }
