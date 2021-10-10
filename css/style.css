@@ -1,22 +1,29 @@
+/* Программы для обучения программированию */
+
 /******************************************************************************
 # Tags
 ******************************************************************************/
 
 body {
-	background-color: rgb(0, 16, 8);
+	background-color: rgb(4, 8, 16);
     font-family: sans-serif;
     color: honeydew;
     margin: 0;
     padding: 0;
 }
 
-main, aside, footer {
+header, footer {
+    width: 100%;
+    margin: 0;
+}
+
+main, aside {
     margin: 0 10%;
 }
 
 section {
     display: grid;
-    gap: 2vw;
+    margin: 2vw 0;
 }
 
 article {
@@ -51,16 +58,17 @@ hr {
 # Class
 ******************************************************************************/
 
-.chap {
+.catalog {
     display: block;
 }
 
 .title {
-    padding: 2vw 4vw 1vw;
+    padding: 4vw 0 1vw;
 }
 
 .group {
     grid-template-columns: repeat(4, 1fr);
+    gap: 2vw;
 }
 
 .unit {
@@ -73,7 +81,7 @@ hr {
     position: absolute;
     top: 1vw;
     left: .8vw;
-    font-size: 1.2vw;
+    font-size: 1.2em;
     text-shadow: -2px -2px 3px black, 2px  2px 3px black;
 }
 
@@ -81,7 +89,7 @@ hr {
     position: absolute;
     bottom: 1vw;
     left: .8vw;
-    font-size: .9vw;
+    font-size: 1em;
     color: darkkhaki;
     text-shadow: -2px -2px 3px black, 2px  2px 3px black;
 }
@@ -141,6 +149,23 @@ hr {
     height: 3vw;
 }
 
+.gallery {
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1vw;
+}
+
+.icon {
+    border: none;
+}
+
+.icon-img {
+    border: none;
+}
+
+.icon-title {
+    text-align: center;
+}
+
 
 /******************************************************************************
 # id
@@ -153,11 +178,13 @@ hr {
 #game {
     padding: 2vw;
     grid-template-columns: repeat(5, 1fr);
+    gap: 2vw;
 }
 
 #contest {
     padding: 2vw;
     grid-template-columns: repeat(6, 1fr);
+    gap: 1vw;
 }
 
 #program {
@@ -174,4 +201,98 @@ hr {
     bottom: 1em;
     right: 1.5em;
     display: none;
+}
+
+
+/******************************************************************************
+# media
+******************************************************************************/
+
+@media (min-width: 1281px) {
+    main, aside {
+        margin: 0 10%;
+        max-width: 1440px;
+    }
+
+    .group {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .gallery {
+        grid-template-columns: repeat(10, 1fr);
+    }
+
+    #game {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+    #contest {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media (max-width: 1280px) {
+    main, aside {
+        margin: 0 5%;
+    }
+
+    .group {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    #game {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    #contest {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    main, aside {
+        margin: 0 3%;
+    }
+
+    .group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    #game {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    #contest {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    main, aside {
+        margin: 0 1%;
+    }
+
+    .group {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    #game {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    #contest {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
