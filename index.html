@@ -9,49 +9,69 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css"/>
 </head>
 <body>
+
 <header>
-	<div>
-		<h1>Программа обучения детей программированию</h1>
+	<div id='intro'>
+
 	</div>
-	<div>
-		<a href="contest\index.html"><p>Конкурс 2021</p></a>
+
+	<div class='title'>
+		<h1>Обучение детей программированию</h1>
+		<p>
+			Примеры программ, на которых просто понять разные методы программирования.
+		</p>
 	</div>
-	<hr>
-	<h2>Браузерные игры</h2>
+
 	<section id='game'>
-		<article class='game'>
+		<article class='unit'>
 			<a href="game/Snake/Snake.html" onclick="window.open(this.href, '', 'scrollbars=1, height='+Math.min(710, screen.availHeight)+', width='+Math.min(835, screen.availWidth)); return false;">
-			<img src="game/Snake/snake.png"/>
-			<p>Игра змейка</p></a>
+			<img src="game/Snake/snake.png" class='unit-bg'/>
+			<img src="game/Snake/snake.png" class='unit-img'/>
+			<p class='unit-title'>Игра змейка</p></a>
 		</article>
-		<article class='game'>
+		<article class='unit'>
 			<a href="game/Life/Life.html" target="_blank">
-			<img src="game/Life/Life.jpg"/>
-			<p>Игра жизнь</p></a>
+			<img src="game/Life/Life.jpg" class='unit-bg'/>
+			<img src="game/Life/Life.jpg" class='unit-img'/>
+			<p class='unit-title'>Игра жизнь</p></a>
 		</article>
-		<article class='game'>
+		<article class='unit'>
 			<a href="game\Anthill\Anthill.html" target="_blank">
+			<img src="game\Anthill\anthill.png" class='unit-bg'/>
 			<img src="game\Anthill\anthill.png"/>
-			<p>Муравейник</p></a>
+			<p class='unit-title'>Муравейник</p></a>
 		</article>
-		<article class='game'>
+		<article class='unit'>
 			<a href="game\Stars\stars.html" target="_blank">
-			<img src="game\Stars\stars.jpg"/>
-			<p>Звезды (заставка)</p></a>
+			<img src="game\Stars\stars.jpg" class='unit-bg'/>
+			<img src="game\Stars\stars.jpg" class='unit-img'/>
+			<p class='unit-title'>Звезды (заставка)</p></a>
 		</article>
 	</section>
-	<hr>
+
+	<section id='contest'>
+		<article>
+			<a href="contest\index.html"><p>Конкурс 2021</p></a>
+		</article>
+	</section>
+	<hr/>
 </header>
-<main id='block'>
-	<h1>Мои программы</h1>
-	<!-- Блоки программ из Script.js -->
+
+<main id='program'>
+	<div class='title'>
+		<h1>Программы</h1>
+	</div>
+	<!-- Блоки программ -->
 </main>
-<aside>
-	<!-- Блок языков -->
+
+<aside id='other'>
+	<!-- Блок сайтов, языков и инструмента -->
 </aside>
+
 <footer>
 	<button id="up">вверх</button>
 </footer>
+
 <script type='text/javascript' src="js/Script.js"></script>
 </body>
 </html>

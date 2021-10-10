@@ -3,7 +3,7 @@
 const
     listOther={
         lang: {
-            descript: [],
+            title: [],
             content: [
                 ["Прога 01", 2018, bat, np, "img/bat/bat01.png", "Описание 111 ..."],
                 ["Прога 02", 2019, bat, np, "img/bat/bat02.png", "Описание 222 ..."],
@@ -12,7 +12,7 @@ const
             ]
         },
         tool: {
-            descript: [],
+            title: [],
             content: [
                 ["Прога 11", 2018, bat, np, "img/bat/bat01.png", "Описание 111 ..."],
                 ["Прога 12", 2019, bat, np, "img/bat/bat02.png", "Описание 222 ..."],
@@ -21,7 +21,7 @@ const
             ]
         },
         site: {
-            descript: ['Первые сайты - наждачкой по глазам'],
+            title: ['Первые сайты - наждачкой по глазам'],
             content: [
                 ["Прога 21", 2018, bat, np, "img/bat/bat01.png", "Описание 111 ..."],
                 ["Прога 22", 2019, bat, np, "img/bat/bat02.png", "Описание 222 ..."],

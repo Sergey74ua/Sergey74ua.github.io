@@ -1,9 +1,9 @@
 //Программа обучения детей программированию
 
 const
-    listPart={
+    listChap={
         listBat: {
-            descript: ["Batch", "Bat - везде под рукой"],
+            title: ["Batch", "Bat - везде под рукой"],
             content: [
                 ["Hello World!", 2018, bat, n, "img/bat/bat01.png", "Первая программа. На любом компьютере. Без скачиваний и установок. В блокноте и на bat-нике."],
                 ["Проверка пароля", 2018, bat, n, "img/bat/bat02.png", "Простейшая логика любой программы. Ввод - проверка ввода - вывод в зависимости от результате проверки."],
@@ -18,7 +18,7 @@ const
             ]
         },
         listCpp: {
-            descript: ["C++", "C/C++ - что под капотом"],
+            title: ["C++", "C/C++ - что под капотом"],
             content: [
                 ["Hello World!", 2018, Cpp, vs, "img/cpp/cpp10.png", "Традиционное знакомство с C++."],
                 ["Больше-меньше", 2018, Cpp, vs, "img/cpp/cpp11.png", "Применяем goto и метки, прежде чем перейти к функциям."],
@@ -26,7 +26,7 @@ const
             ]
         },
         listJS: {
-            descript: ["JavaScript", "JavaScript - два в одном"],
+            title: ["JavaScript", "JavaScript - два в одном"],
             content: [
                 ["Змейка", 2018, js, np, "img/JS/Snake.png", "Игра \"Змейка\" - легендарная классика электронных игр."],
                 ["Жизнь", 2021, js, vsc, "img/JS/Life.jpg", "Игра \"Жизнь\" - знакомство с клеточными автоматами."],
@@ -35,46 +35,51 @@ const
             ]
         },
         listJava: {
-            descript: ["Java", "Java - кровавый энтерпрайз"],
+            title: ["Java", "Java - кровавый энтерпрайз"],
             content: [
-                ["Tetris", 2019, java, np, "img/Java/Tetrs.jpg", "Классический тетрис с выводом результатов в системе чемпионата."],
-                ["Space zombie", 2019, java, as, "img/Java/AS_Java_KNB.jpg", "Описание 222 ..."],
-                ["Прога lang4_03", 2019, java, as, "img/Java/AS_Java_KNB.jpg", "Описание 333 ..."],
-                ["Прога lang4_04", 2019, java, as, "img/Java/AS_Java_KNB.jpg", "Описание 444 ..."],
-                ["Прога lang4_05", 2019, java, as, "img/Java/AS_Java_KNB.jpg", "Описание 555 ..."],
-                ["Прога lang4_06", 2019, java, as, "img/Java/AS_Java_KNB.jpg", "Описание 666 ..."],
-                ["Прога lang4_07", 2019, java, as, "img/Java/AS_Java_KNB.jpg", "Описание 777 ..."],
-                ["Прога lang4_08", 2019, java, as, "img/Java/AS_Java_KNB.jpg", "Описание 888 ..."],
-                ["Прога lang4_09", 2019, java, as, "img/Java/AS_Java_KNB.jpg", "Описание 222 ..."],
-                ["Прога lang4_10", 2019, java, as, "img/Java/AS_Java_KNB.jpg", "Описание 333 ..."],
-                ["Прога lang4_11", 2019, java, as, "img/Java/AS_Java_KNB.jpg", "Описание 999 ..."]
+                ["Tetris", 2019, java, np, "img/Java/Tetris.jpg", "Классический тетрис с выводом результатов в системе чемпионата."],
+                ["Панель управления", 2019, java, as, "img/Java/AS_Java_00.jpg", "Панель управления ссылками на различные приложения или сайты."],
+                ["Камень - ножницы - бумага", 2019, java, as, "img/Java/AS_Java_09.jpg", "Классическая игра, но уже для смартфона."],
+                ["Space zombie, меню", 2019, java, as, "img/Java/AS_Java_01.jpg", "Игра в жанре квест с анимацией."],
+                ["Space zombie, комната", 2019, java, as, "img/Java/AS_Java_03.jpg", "первый уровень, линейный сценарий действий,"],
+                ["Space zombie, лес", 2019, java, as, "img/Java/AS_Java_04.jpg", "второй уровень, действия в определенной последовательности,"],
+                ["Space zombie, поле", 2019, java, as, "img/Java/AS_Java_05.jpg", "третий уровень, пересекающиеся варианты действий,"],
+                ["Space zombie, берег", 2019, java, as, "img/Java/AS_Java_06.jpg", "четвертый уровень, с логическим выбором действий."]
             ]
         },
         listPas: {
-            descript: ["Pascal", "Pascal - язык мертвых"],
+            title: ["Pascal", "Pascal - язык мертвых"],
             content: [
-                ["Прога lang5_01", 2018, bat, np, "img/bat/bat01.png", "Описание 111 ..."],
-                ["Прога lang5_02", 2019, bat, np, "img/bat/bat02.png", "Описание 222 ..."],
-                ["Прога lang5_03", 2020, bat, np, "img/bat/bat03.png", "Описание 333 ..."],
-                ["Прога lang5_04", 2026, bat, np, "img/bat/bat09.png", "Описание 999 ..."]
+                ["Больше - меньше", 2019, pascal, np, "img/Pascal/BM.jpg", "Классическая игра больше - меньше."],
+                ["Больше меньше AI", 2019, pascal, np, "img/Pascal/BMAI.jpg", "То же, но со стороны компьютера, который угадывает загаданное число."],
+                ["Парадокс", 2019, pascal, np, "img/Pascal/Paradox.jpg", "Программа для доказательства парадокса Монти Холла."],
+                ["Сортировка пузырьком", 2019, pascal, np, "img/Pascal/Sort.jpg", "Сортировка пузырьком с наглядным графиком."],
+                ["Камень - ножницы - бумага", 2019, pascal, np, "img/Pascal/KNB.jpg", "Камень - ножницы - бумага с графическим интерфейсом."]
             ]
         },
         listCS: {
-            descript: ["С#", "С# - где ты раньше был"],
+            title: ["С#", "С# - где ты раньше был"],
             content: [
-                ["Прога lang6_01", 2018, bat, np, "img/bat/bat01.png", "Описание 111 ..."],
-                ["Прога lang6_02", 2019, bat, np, "img/bat/bat02.png", "Описание 222 ..."],
-                ["Прога lang6_03", 2020, bat, np, "img/bat/bat03.png", "Описание 333 ..."],
-                ["Прога lang6_04", 2026, bat, np, "img/bat/bat09.png", "Описание 999 ..."]
+                ["Hello World!", 2020, cs, n, "img/CS/Hello world.jpg", "Классический Hello World!, с компиляцией из консоли."],
+                ["MyOsu", 2020, cs, np, "img/CS/MyOsu.jpg", "Пародия на игру Osu."],
+                ["Треугольник Серпинского", 2020, cs, np, "img/CS/Triangle.jpg", "Наглядная демонстрация Треугольника Серпинского."],
+                ["Аквариум", 2020, cs, vs, "img/CS/Аквариум.jpg", "Аквариум на архитектуре ООП."],
+                ["Часы", 2020, cs, vs, "img/CS/Clock.jpg", "Часы без фона."],
+                ["Танки", 2020, cs, vs, "img/CS/Tanks.jpg", "Танки с применением ООП, абстрактных классов и интерфесов."],
+                ["Unity - первая карта", 2020, cs, vs, "img/CS/Unity-Maxim.jpg", "Unity произвольное рисование,"],
+                ["Unity - вторая карта", 2020, cs, vs, "img/CS/Unity-Nikita.jpg", "и еще Unity,"],
+                ["Unity - третья карта", 2020, cs, vs, "img/CS/Unity-Matvey.jpg", "и снова Unity."]
             ]
         },
         listPy: {
-            descript: ["Python", "Python - наша прелесть для олимпийцев"],
+            title: ["Python", "Python - наша прелесть для олимпийцев"],
             content: [
-                ["Прога lang7_01", 2018, bat, np, "img/bat/bat01.png", "Описание 111 ..."],
-                ["Прога lang7_02", 2019, bat, np, "img/bat/bat02.png", "Описание 222 ..."],
-                ["Прога lang7_03", 2020, bat, np, "img/bat/bat03.png", "Описание 333 ..."],
-                ["Прога lang7_04", 2026, bat, np, "img/bat/bat09.png", "Описание 999 ..."]
+                ["Рассчет треугольника", 2021, python, n, "img/Python/Angle.jpg", "Рассчет возможности и параметров треугольника по введенным данным."],
+                ["Камень - ножницы - бумага", 2021, python, np, "img/Python/KNB_py.jpg", "Камень - ножницы - бумага в консоле."],
+                ["Автокликкер", 2021, python, ps, "img/Python/Clicker.jpg", "Автокликкер с использованием библиотек PyAutoGUI, PySide2 и множества других."],
+                ["Информер", 2021, python, ps, "img/Python/Webinfo.jpg", "Программа на Python с веб-интерфейсом, с использованием бибилиотеки Eel."],
+                ["RATORI - меню", 2021, python, ps, "img/Python/Ratori_menu.jpg", "Игровое меню на базе библиотеки PyGame."],
+                ["RATORI", 2021, python, ps, "img/Python/Ratori_game.jpg", "Игра на принципе камеры и картой из атласа тайлов."]
             ]
         },
     };

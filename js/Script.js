@@ -1,7 +1,7 @@
 //Программа обучения детей программированию
 
 //Подключение файлов скриптов и данных
-var listClass=['icons.js', 'data.js', 'Prog.js'];
+var listClass=['icons.js', 'data.js', 'Program.js'];
 for (let name of listClass) {
    let script=document.createElement('script');
    script.type='text/javascript';
