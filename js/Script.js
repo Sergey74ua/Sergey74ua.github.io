@@ -1,7 +1,7 @@
 //Программы для обучения программированию
 
 //Подключение файлов скриптов и данных
-var listClass=['icons.js', 'data.js', 'other.js', 'Main.js'];
+var listClass=['intro.js', 'icons.js', 'data.js', 'other.js', 'Main.js'];
 for (let name of listClass) {
    let script=document.createElement('script');
    script.type='text/javascript';
