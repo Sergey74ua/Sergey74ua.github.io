@@ -43,7 +43,7 @@ const
             ]
         },
         site: {
-            title: ['Сайты', 'Примеры свйтов.'],
+            title: ['Сайты', 'Примеры сайтов.'],
             content: [
                 ['uCoz', 'img/Web/uCoz.png'],
                 ['WordPress', 'img/Web/WP.png'],
