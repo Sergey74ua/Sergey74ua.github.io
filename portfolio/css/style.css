@@ -1,0 +1,94 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1em 1em .5em calc(10% + 1em);
+    background: rgb(100, 50, 0);
+    color: rgb(255, 240, 200);
+}
+
+footer {
+    bottom: 0;
+    background: rgb(100, 50, 0);
+    color: rgb(255, 240, 200);
+    text-align: center;
+    padding: .5em;
+}
+
+img {
+    object-fit: contain;
+    width: 100%;
+}
+
+h1 {
+    vertical-align:baseline;
+    font-size: 52px;
+    text-shadow: #FC0 1px 0 4px;
+    margin: 0 1em 0 1em;
+}
+
+p {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 8em;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    align-items: baseline;
+}
+
+.container {
+    color: rgb(100, 50, 0);
+    margin: auto;
+    width: 80%;
+}
+
+.intro {
+    margin: auto;
+    width: 40%;
+    text-align: center;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: baseline;
+    flex-direction: row;
+}
+
+.portfolio div {
+    width: 20em;
+    max-height: 36em;
+    margin: 1em 0 2em 1em;
+    text-align: center;
+}
+
+
+#up {
+    position: fixed;
+    z-index: 1;
+    right: .75em;
+    bottom: .75em;
+    border-radius: 35%;
+    font-size: 1.5em;
+    padding: 1px 6px 1px;
+    background: rgb(255, 240, 200, .5);
+    color: rgb(100, 50, 0, .75);
+    border-color: rgba(100, 50, 0, .5);
+    display: none;
+}
