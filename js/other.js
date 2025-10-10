@@ -50,6 +50,7 @@ const
                 ['X-Mif', 'img/Web/Xmif.png'],
                 ['Omamah', 'img/Web/Omamah.jpg'],
                 ['Mebelemirov', 'img/Web/Mebelemirov.jpg'],
+				['AmStaf', 'img/Web/AmStaf.png'],
                 ['Portfolio', 'img/Web/Portfolio.jpg']
             ]
         }
